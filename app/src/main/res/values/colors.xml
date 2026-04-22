@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand blues -->
+    <color name="color_primary">#1565C0</color>
+    <color name="color_primary_dark">#0D47A1</color>
+
+    <!-- Semantic -->
+    <color name="color_info">#1E88E5</color>
+    <color name="color_info_bg">#E3F2FD</color>
+    <color name="color_success">#43A047</color>
+    <color name="color_success_bg">#E8F5E9</color>
+    <color name="color_danger">#E53935</color>
+    <color name="color_secondary">#757575</color>
+    <color name="color_secondary_light">#B0BEC5</color>
+
+    <!-- Surfaces -->
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_variant">#F0F4F8</color>
+    <color name="divider">#E2E8F0</color>
+
+    <!-- Terminal log -->
+    <color name="log_background">#1A1E2A</color>
+    <color name="log_text_muted">#8B949E</color>
+</resources>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="268dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="6dp"
+    android:layout_marginEnd="6dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="4dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    app:strokeColor="@color/divider"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Colored top accent bar -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/color_primary"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!-- CAN ID row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="6dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:letterSpacing="0.1"
+                    android:text="CAN ID"
+                    android:textAllCaps="true"
+                    android:textColor="@color/color_primary"
+                    android:textSize="10sp"
+                    android:textStyle="bold"/>
+
+                <ImageButton
+                    android:id="@+id/btnRemove"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Remove command"
+                    android:src="@drawable/ic_clear_log"
+                    app:tint="@color/color_danger"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editCanId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_outline"
+                android:fontFamily="monospace"
+                android:hint="e.g. 7DF"
+                android:inputType="textNoSuggestions"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="8dp"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="6dp"
+                android:letterSpacing="0.1"
+                android:text="Data Bytes"
+                android:textAllCaps="true"
+                android:textColor="@color/color_primary"
+                android:textSize="10sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/editDataBytes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_outline"
+                android:fontFamily="monospace"
+                android:hint="Hex e.g. DEADBEEF"
+                android:inputType="textNoSuggestions"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="8dp"
+                android:textSize="13sp"/>
+
+            <CheckBox
+                android:id="@+id/checkPeriodic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:checked="false"
+                android:text="Periodic"
+                android:textColor="@color/color_secondary"
+                android:textSize="12sp"/>
+
+            <LinearLayout
+                android:id="@+id/layoutInterval"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Interval (sec)"
+                    android:textColor="@color/color_secondary"
+                    android:textSize="12sp"/>
+
+                <EditText
+                    android:id="@+id/editInterval"
+                    android:layout_width="64dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_outline"
+                    android:fontFamily="monospace"
+                    android:hint="e.g. 5"
+                    android:inputType="number"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="6dp"
+                    android:textSize="13sp"/>
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Send"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                app:backgroundTint="@color/color_success"
+                app:cornerRadius="8dp"
+                app:icon="@drawable/ic_send"
+                app:iconGravity="textStart"
+                app:iconPadding="6dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
