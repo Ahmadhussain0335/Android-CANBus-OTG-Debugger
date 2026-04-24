@@ -67,6 +67,7 @@ class CommandActivity : AppCompatActivity() {
             binding.rvCommands.post {
                 binding.rvCommands.smoothScrollToPosition(commandAdapter.itemCount - 1)
             }
+            Toast.makeText(this, "New command slot added (${commandAdapter.itemCount} total)", Toast.LENGTH_SHORT).show()
         }
 
         binding.tvMoreDetails.setOnClickListener {

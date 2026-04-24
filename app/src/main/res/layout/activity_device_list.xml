@@ -12,7 +12,7 @@
         android:layout_height="?attr/actionBarSize"
         android:background="@color/color_primary_dark"
         android:elevation="4dp"
-        app:title="CAN Commander"
+        app:title="Device Scanner"
         app:titleTextColor="@android:color/white"/>
 
     <!-- Hero header -->

@@ -11,6 +11,7 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.app.canconnection.CanApplication
 import com.app.canconnection.databinding.ActivityDeviceListBinding
 import com.app.canconnection.ui.configure.ConfigureActivity
@@ -40,6 +41,7 @@ class DeviceListActivity : AppCompatActivity() {
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        installSplashScreen()
         super.onCreate(savedInstanceState)
         binding = ActivityDeviceListBinding.inflate(layoutInflater)
         setContentView(binding.root)

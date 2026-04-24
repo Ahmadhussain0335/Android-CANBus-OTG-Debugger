@@ -18,6 +18,9 @@
     <color name="surface_variant">#F0F4F8</color>
     <color name="divider">#E2E8F0</color>
 
+    <!-- Splash screen -->
+    <color name="splash_background">#0A1628</color>
+
     <!-- Terminal log -->
     <color name="log_background">#1A1E2A</color>
     <color name="log_text_muted">#8B949E</color>

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CAN Commander</string>
+    <string name="app_name">CANBus OTG Debugger</string>
 
     <string-array name="bitrate_labels">
         <item>10 kbps</item>

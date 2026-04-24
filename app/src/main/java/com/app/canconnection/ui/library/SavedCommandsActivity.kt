@@ -82,7 +82,7 @@ class SavedCommandsActivity : AppCompatActivity() {
                     binding.editCommandName.text?.clear()
                     binding.editCommandCanId.text?.clear()
                     binding.editCommandData.text?.clear()
-                    Toast.makeText(this, "\"$name\" added", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Command \"$name\" saved to library", Toast.LENGTH_SHORT).show()
                 }
             }
         }
