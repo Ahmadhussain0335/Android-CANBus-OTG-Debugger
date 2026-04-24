@@ -1,4 +1,8 @@
-# CAN Commander
+# CANBus OTG Debugger
+
+<p align="center">
+  <img src="assets/img/appIcon.jpg" alt="App Icon" width="120"/>
+</p>
 
 An Android application for sending and receiving CAN bus frames over USB using OTG-connected CAN adapters. Supports both SLCAN-compatible serial adapters and the PEAK PCAN-USB device.
 
@@ -28,11 +32,11 @@ An Android application for sending and receiving CAN bus frames over USB using O
 
 ## Screenshots
 
-### Device Discovery
+### Device Scanner
 
 | No device connected | PEAK PCAN-USB detected |
 |---|---|
-| ![No device](assets/img/Screen_1.jpeg) | ![PEAK detected](assets/img/Screen_2.jpeg) |
+| ![No device](assets/img/Screen_1.jpg) | ![PEAK detected](assets/img/Screen_2.jpg) |
 
 ### Configure Connection
 
@@ -164,6 +168,7 @@ git clone https://github.com/Ahmadhussain0335/Android-CANBus-OTG-Debugger
 | `androidx.lifecycle:lifecycle-viewmodel-ktx` | AndroidViewModel + LiveData |
 | `androidx.constraintlayout:constraintlayout` | Device card layout |
 | `com.github.mik3y:usb-serial-for-android` | SLCAN adapter USB serial driver |
+| `androidx.core:core-splashscreen` | Splash screen (SplashScreen API compat) |
 
 ---
 
